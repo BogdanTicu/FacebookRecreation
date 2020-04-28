@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>MyFirstWebsite</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        #Bar{
+         background-color:cornflowerblue;
+            font-size: large;
+            padding-bottom: 4px;
+            display: flex;
+
+        }
+        #Search_bar{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 100px;
+        }
+        #FacebookIcon{
+            width: 2%;
+            height: 2%;
+            padding-left: 150px;
+            padding-top: 5px;
+        }
+        .Profile{
+            padding-top: 9px;
+            padding-left:3px;
+        }
+        .Profile > button{
+
+            background-color: cornflowerblue;
+            border :none;
+            font-size: 20px;
+            padding-left:25px;
+
+        }
+        .Profile >button:hover{
+            background-color: gray;
+        }
+        .IconBar1{
+            padding-left: 15px;
+            width: 7%;
+            height: auto;
+            padding-right: 10px;
+        }
+        .IconBar2{
+            margin-top: 5px;
+            padding-left: 15px;
+            padding-top: 1px;
+            width: 7%;
+            height: auto;
+            padding-right: 10px;
+        }
+        #FindFriends{
+            font-size: 15px;
+        }
+        #IconBar3{
+            width: 6%;
+            height: auto;
+            padding-left: 15px;
+        }
+        #IconBar4{
+            width: 5%;
+            height: auto;
+        }
+        article{
+            display: flex;
+            margin: initial;
+        }
+        #left_col{
+            margin: 2px;
+            width: 350px;
+        }
+        #left_col div > button{
+            border: none;
+            background-color: azure;
+        }
+        #left_col button:hover{
+            background-color: lightgray;
+        }
+        #left_col ul li{
+            list-style: none;
+            width: 300%;
+            height: auto;
+        }
+
+        #left_col ul li > button{
+            border: none;
+            background-color: azure;
+            padding-right: 20px;
+        }
+        #left_col div img{
+            width: 7%;
+            height: auto;
+            padding-left: 110px;
+           margin-top: 12px;
+        }
+        #left_col ul li img{
+            width: 4%;
+            height: auto;
+            margin-left: 80px;
+        }
+        ul li p{
+            margin-left: 100px;
+            font-size: 18px;
+        }
+        #mid_col {
+            margin-top: 100px;
+        }
+        #mid_col p{
+            background-color: white;
+            margin-bottom: 0;
+        }
+        #Post_sth{
+            width: 504px;
+        }
+        #story {
+            width: 100px;
+            height: auto;
+        }
+        #post_icons img{
+             width: 12%;
+             height: auto;
+        }
+        #mid_col button{
+            border: none;
+        }
+        #mid_col button:hover{
+            background-color: lightgray;
+        }
+        #post_icons > div{
+           width:120px;
+            margin:0 3px;
+        }
+        #story > textarea{
+            text-align: justify;
+        }
+        .posts img{
+            width:5%;
+            height: auto;
+        }
+        .posts{
+            background-color: white;
+            width: 500px;
+            margin-bottom: 50px;
+        }
+        .posts button{
+            background-color: white;
+            width: 50%;
+        }
+        #mid_col .posts p{
+            margin-top: 10px;
+        }
+        .DisplayType{
+            display: flex;
+        }
+        .posts .DisplayType >p{
+            width: 25px;
+            height: auto;
+            margin-right: 50px;
+        }
+        .posts .DisplayType > button{
+            width: 100px;
+            margin-left: 275px;
+        }
+        .action_buttons .like_and_comment{
+            margin-left: 0;
+            width: 50px;
+        }
+        .action_buttons div{
+            height: auto;
+            margin-left: 50px;
+            width: 200px;
+        }
+        .action_buttons div > p{
+            font-size: 12px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .action_buttons div > img{
+            width: 10%;
+            height: 50%;
+        }
+        .posts .post_img{
+            width:70%;
+            height: auto;
+        }
+        .posts div .DisplayType > img{
+            height:auto;
+            width: 12%;
+        }
+        #right_col{
+            margin-left: 30px;
+            margin-top: 100px;
+            width: 400px;
+        }
+        #right_col > div > .DisplayType > p{
+            margin-right: 20px;
+        }
+        #right_col > div >.DisplayType > a{
+            margin-top: 16px;
+            margin-left: 190px;
+        }
+        #right_col > div{
+            background-color: white;
+        }
+        #right_col > div > div{
+            
+        }
+        #Languages a{
+            margin: 0 10px;
+        }
+        #Languages img{
+            margin: 0 10px;
+            width: 5%;
+            height: auto;
+        }
+
+    </style>
+</head>
+<body>
+     <main>
+         <div id="Bar">
+             <img src="https://img.icons8.com/ios-filled/2x/facebook.png" alt="Facebook Icon" id="FacebookIcon">
+            <div id="Search_bar">
+                <form>
+                     <textarea rows="1" cols="50" name="comment">
+                        Search
+                     </textarea>
+                 </form>
+             </div>
+                 <div class="Profile">
+                     <button>John</button>
+                 </div>
+                 <div class="Profile">
+                     <button>Home</button>
+                 </div>
+                 <div class="Profile">
+                      <button id="FindFriends">Find Friends</button>
+                </div>
+                <div class="Profile">
+                     <button>Create</button>
+                </div>
+                <div>
+                    <img class="IconBar1" src="https://image.flaticon.com/icons/png/128/20/20697.png" alt="FriendRequestImg">
+                    <img class="IconBar2" src="https://cdn.pixabay.com/photo/2016/07/03/18/35/messenger-1495274_1280.png" alt="MessageIcon">
+                    <img id="IconBar3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZX2Il0MrVXwqqT93otlG10xYPUcpAFo6f_UwUcb0GSWk4Ra7m&usqp=CAU" alt="HelpIcon">
+                    <img id="IconBar4" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-down-b-128.png" alt="DownArrow">
+                </div>
+         </div>
+        <article>
+            <div id="left_col">
+                <div>
+                    <br></br>
+                    <img src="https://img.icons8.com/plasticine/2x/user.png" alt="PlayerIcon">
+                    <button>John Smith</button>
+                </div>
+                <p></p>
+                <ul>
+                    <li>
+                        <img src="https://findicons.com/files/icons/2770/ios_7_icons/100/news.png" alt="NewsIcon">
+                       <button>News</button>
+                    </li>
+                    <li>
+                        <img src="https://m.interfone.jp/wp-content/uploads/2017/03/facebook-messenger-icon-100x100.png" alt="Messenger">
+                        <button>Messenger</button>
+                    </li>
+                    <li>
+                        <img id="WatchIcon"src="https://image.shutterstock.com/image-vector/watch-tv-icon-web-design-260nw-1266206719.jpg" alt="Watch">
+                        <button>Watch</button>
+                    </li>
+                    <li>
+                        <img src="https://www.homeaccentstoday.com/wp-content/uploads/sites/13/2016/10/185235-facebook-launches-marketplace-shopping.jpg">
+                        <button>Marketplace</button>
+                    </li>
+                </ul>
+                <ul id="Shortcuts">
+                   <li><p><strong>Shortcuts</strong></p></li>
+                    <li>
+                        <img src="https://i.pinimg.com/474x/fb/9e/c4/fb9ec4fe64653c49e3652c9f252d75e6.jpg" alt="Candy">
+                        <button>Candy Crush Saga</button>
+                    </li>
+                </ul>
+                <ul id="Explore">
+                    <li><p><strong>Explore</strong></p></li>
+                    <li>
+                        <img src="https://autolikes-bc85.kxcdn.com/blog/wp-content/uploads/2018/01/Facebook-Group-Icon.jpg">
+                        <button>Groups</button>
+                    </li>
+                    <li>
+                        <img src="https://apprecs.org/gp/images/app-icons/300/54/com.facebook.pages.app.jpg">
+                        <button>Pages</button>
+                    </li>
+                    <li>
+                        <img src="https://image.shutterstock.com/image-vector/facebook-calendar-icon-vector-date-260nw-465593357.jpg">
+                        <button>Events</button>
+                    </li>
+                    <li>
+                        <img src="https://i.ya-webdesign.com/images/pixel-coin-png-9.png">
+                        <button>Fund Raising</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/memories-1446023-1222932.png">
+                        <button>Memories</button>
+                    </li>
+                    <li>
+                        <img src="https://spng.pinpng.com/pngs/s/202-2023464_games-icon-image-game-icon-png-small-transparent.png">
+                        <button>Games</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn4.iconfinder.com/data/icons/general08/png/256/briefcase.png">
+                        <button>Jobs</button>
+                    </li>
+                    <li>
+                        <img src="https://i.pinimg.com/originals/fa/e9/90/fae9900fe9a9187e1972ede7913688ee.png" alt="SavedIcon">
+                        <button>Saved</button>
+                    </li>
+                    <li>
+                        <img src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/bookmark.png" alt="SellGroup">
+                        <button>Selling groups</button>
+                    </li>
+                    <li>
+                        <img src="https://store-images.s-microsoft.com/image/apps.23981.13661098843479326.7e8b52b5-5c65-4758-babe-fdc979ec7531.10b4ebb0-9a6f-459b-81ea-6704a5ea9e2f?mode=scale&q=90&h=200&w=200&background=%2329B542" alt="Live">
+                        <button>Live videos</button>
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/ios/500/friends.png" alt="">
+                        <button>Find friends</button>
+                    </li>
+                    <li>
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/355/068/small/Military__284_29.jpg" alt="Crisis Situations">
+                        <button>Crisis Situations</button>
+                    </li>
+                    <li>
+                        <img src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/notes-512.png" alt="Notes">
+                        <button>Notes</button>
+                    </li>
+                    <li>
+                        <img src="https://static.thenounproject.com/png/467725-200.png" alt="Recommendations">
+                        <button>Recommendations</button>
+                    </li>
+                    <li>
+                        <img src="https://img.icons8.com/pastel-glyph/2x/worldwide-location.png" alt="Offers">
+                        <button>Offers</button>
+                    </li>
+                    <li>
+                        <img src="https://icons-for-free.com/iconfiles/png/512/forecast+partly+cloudy+weather+icon-1320196484400215944.png" alt="Weather">
+                        <button>Weather</button>
+                    </li>
+                    <li>
+                        <img src="https://www.seekpng.com/png/small/147-1478242_gaming-clipart-game-icon-video-games-icon-png.png" alt="Gaming video">
+                        <button>Gaming video</button>
+                    </li>
+                    <li>
+                        <img src="https://static.thenounproject.com/png/1396274-200.png" alt="Friend list">
+                        <button>Friend List</button>
+                    </li>
+                    <li>
+                        <img src="https://listimg.pinclipart.com/picdir/s/55-553388_memories-icon-memories-icon-png-clipart.png" alt="Memories">
+                        <button>Memories</button>
+                    </li>
+                </ul>
+            </div>
+            <div id="mid_col">
+               <div id="Post_sth">
+                  <p>Create a post</p>
+                   <form id="story">
+                       <textarea rows="5" cols="67" name="comment">
+                         Write something,John:
+                       </textarea>
+                   </form>
+                   <div id="post_icons" class="DisplayType">
+                       <div>
+                           <img src="https://image.shutterstock.com/image-vector/camera-icon-trendy-flat-style-260nw-1017944869.jpg" alt="Photo">
+                           <button>Photo/Video</button>
+                       </div>
+                       <div>
+                           <img src="https://www.leitz.com/azure/catalogfiles/products/WebP__Mobile__6EE4454E529D0B35F8BFE94C8D1C85D7__440__ll_70030001_v2-e215333cba686a48a664e9529ecc96e0.png" alt="Ticket">
+                           <button>Mark someone</button>
+                       </div>
+                       <div>
+                           <img src="https://static.thenounproject.com/png/680031-200.png" alt="Photo">
+                           <button>Activity</button>
+                       </div>
+                       <div>
+                           <a href="https://static.thenounproject.com/png/777830-200.png">
+                               <img src="https://static.thenounproject.com/png/777830-200.png">
+                           </a>
+                       </div>
+                   </div>
+               </div>
+                <br/>
+
+
+
+                <div class="posts">
+                    <div>
+                        <img src="https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png" alt="image_profile">
+                        <button>Alice</button>
+                    </div>
+                    <p>Hello,i want to know what is the weather today?</p>
+                    <div class="DisplayType">
+                        <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="Nr_Likes">
+                        <p>13</p>
+                        <button>117 comments</button>
+                    </div>
+                    <br/>
+                    <div class="DisplayType action_buttons">
+                        <div>
+                            <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="Nr_Likes">
+                            <button class="like_and_comment"> Like </button>
+                        </div>
+                        <div class="DisplayType">
+                            <img src="https://lh3.googleusercontent.com/proxy/U8WIZDLicbheRzSYoBsk9qlsa2M9QAPu6ed4C6lVVijj6a97S_IewEgepMAKKg-8ipQmbV71EH_8vMP85EU8230saTBjBSOlrEWjMuSXqg" alt="Comment">
+                             <p>Comment</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="posts">
+                    <div>
+                        <img src="https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png" alt="image_profile">
+                        <button>Alina</button>
+                    </div>
+                    <p>I made this photo of flowers,look awesome!!</p>
+                    <img class="post_img"src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Flower">
+                    <div class="DisplayType">
+                        <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="Nr_Likes">
+                        <p>200</p>
+                        <button>453 comments</button>
+                    </div>
+                    <br/>
+                    <div class="DisplayType action_buttons">
+                        <div>
+                            <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="Nr_Likes">
+                            <button class="like_and_comment"> Like </button>
+                        </div>
+                        <div class="DisplayType">
+                            <img src="https://lh3.googleusercontent.com/proxy/U8WIZDLicbheRzSYoBsk9qlsa2M9QAPu6ed4C6lVVijj6a97S_IewEgepMAKKg-8ipQmbV71EH_8vMP85EU8230saTBjBSOlrEWjMuSXqg" alt="Comment">
+                            <p>Comment</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="posts">
+                    <div>
+                        <img src="https://www.seekpng.com/png/small/41-410093_circled-user-icon-user-profile-icon-png.png" alt="image_profile">
+                        <button>John</button>
+                    </div>
+                    <p>Can you help me with my pc??</p>
+                    <img class="post_img" src="https://www.partitionwizard.com/images/uploads/articles/2019/04/your-pc-ran-into-problem/your-pc-ran-into-problem-thumbnail.jpg" alt="img">
+                    <div class="DisplayType">
+                        <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="Nr_Likes">
+                        <p>5</p>
+                        <button>11 comments</button>
+                    </div>
+                    <br/>
+                    <div class="DisplayType action_buttons">
+                        <div>
+                            <img src="https://img.icons8.com/pastel-glyph/2x/facebook-like.png" alt="Nr_Likes">
+                            <button class="like_and_comment"> Like </button>
+                        </div>
+                        <div class="DisplayType">
+                            <img src="https://lh3.googleusercontent.com/proxy/U8WIZDLicbheRzSYoBsk9qlsa2M9QAPu6ed4C6lVVijj6a97S_IewEgepMAKKg-8ipQmbV71EH_8vMP85EU8230saTBjBSOlrEWjMuSXqg" alt="Comment">
+                            <p>Comment</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="right_col">
+                <div>
+                    <div class="DisplayType">
+                         <p>Sponsorised</p>
+                        <a href="https://spark.adobe.com/make/advertisement-maker/">Create an ad</a>
+                    </div>
+                    <div>
+                        <img src="https://scontent.fotp3-3.fna.fbcdn.net/v/t45.1600-4/cp0/q90/spS444/p296x100/92529750_23844394001390139_8969255563732975616_n.png.jpg?_nc_cat=101&_nc_sid=67cdda&_nc_ohc=tuX3GBwir2AAX86d85O&_nc_ht=scontent.fotp3-3.fna&oh=6c5a6fe95db03ebc02fdbca66cd7b39b&oe=5ECDDB48" alt="Ad">
+                        <p>Buy now</p>
+                        <a href="https://www.foodpanda.ro/">FoodPanda</a>
+                        <p>Our restaurants ship your favourite food door to door for free!<br/>
+                            Plus,you have 30% discounts...</p>
+                    </div>
+                    <div>
+                        <img src="https://scontent.fotp3-3.fna.fbcdn.net/v/t45.1600-4/cp0/q90/spS444/p160x160/89693280_23844350622730485_9051643425996144640_n.png.jpg?_nc_cat=101&_nc_sid=67cdda&_nc_ohc=snFbavNRJEMAX_ev9lh&_nc_ht=scontent.fotp3-3.fna&oh=b2f6a50ace095ccb8c76b9353ff3cac4&oe=5ECDFBD6" alt="Ad">
+                        <p>25% discount for next 48h</p>
+                        <a href="https://www.startcasa.ro/">startacasa.ro</a>
+                        <p>For 5 days you have prices as Black Friday!!!!</p>
+                    </div>
+                </div>
+                <div id="Languages" class="DisplayType">
+                    <a href="https://en.wikipedia.org/wiki/English_language">English</a>
+                    <a href="https://en.wikipedia.org/wiki/Romanian_language">Romanian</a>
+                    <a href="https://en.wikipedia.org/wiki/Magyar">Magyar</a>
+                    <img src="https://icons-for-free.com/iconfiles/png/512/circle+more+plus+icon-1320183136549593898.png" alt="More">
+                </div>
+            </div>
+        </article>
+     </main>
+    </body>
+</html>
